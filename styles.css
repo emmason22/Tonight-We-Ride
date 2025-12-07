@@ -821,31 +821,29 @@ background-attachment: scroll;
 }
 
 @media (max-width: 640px) {
-.hero {
-min-height: 180vh;
-background-position: top center;
-}
+    .hero {
+        min-height: 100vh;          /* full screen-ish on iPhones */
+        background-position: top center;
+        background-attachment: scroll; /* smoother on mobile */
+    }
 
-```
-.container {
-    padding: 0 var(--spacing-md);
-}
+    .container {
+        padding: 0 var(--spacing-md);
+    }
 
-h1,
-h2,
-h3 {
-    letter-spacing: 0.02em;
-}
+    h1,
+    h2,
+    h3 {
+        letter-spacing: 0.02em;
+    }
 
-p {
-    font-size: 1rem;
-    line-height: 1.6;
-}
+    p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
 
-/* extra emphasis on QR cards as tappable */
-.qr-item {
-    box-shadow: var(--shadow-lg);
-}
-```
-
+    /* extra emphasis on QR cards as tappable */
+    .qr-item {
+        box-shadow: var(--shadow-lg);
+    }
 }
