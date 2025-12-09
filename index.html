@@ -7,19 +7,15 @@
     <meta name="description" content="Tonight We Ride - Chad D's 26th Annual Toy Drive Charity Event" />
     <title>Tonight We Ride - Chad D's 26th Annual Toy Drive</title>
 
-```
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
-<!-- Styles -->
-<link rel="stylesheet" href="styles.css" />
-```
-
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-```
 <!-- ========================================================
      NAVIGATION
 ======================================================== -->
@@ -51,6 +47,16 @@
     <img src="ToyDrivePosterHero.png" alt="Toy Drive Poster" class="hero-poster" />
     <div class="hero-content"></div>
 </header>
+
+<!-- ========================================================
+     DONATE NOW BAR (Inserted Below Hero)
+======================================================== -->
+<section class="donate-bar">
+    <button class="donate-btn"
+        onclick="document.querySelector('#charities').scrollIntoView({ behavior: 'smooth' })">
+        Donate Now
+    </button>
+</section>
 
 <!-- ========================================================
      ABOUT SECTION
@@ -119,7 +125,7 @@
                 </p>
 
                 <p class="event-info">
-                     <strong>Date:</strong> December 15<br />
+                    <strong>Date:</strong> December 15<br />
                     <strong>Time:</strong> 6:30 PM<br />
                     First band at 6:30 • Last band at 11:30
                 </p>
@@ -149,7 +155,6 @@
             <div class="band-card">
                 <img src="RTB2.jpg" class="band-img" alt="RTB2" loading="lazy" />
                 <h3>RTB2</h3>
-                <p class="band-time">Early evening</p>
             </div>
 
             <div class="band-card">
@@ -166,6 +171,7 @@
             <div class="band-card">
                 <img src="NothingStrikesBack.jpg" class="band-img" alt="Nothing Strikes Back" loading="lazy" />
                 <h3>Nothing Strikes Back</h3>
+                <p class="band-time">Early evening</p>
             </div>
 
             <div class="band-card">
@@ -181,7 +187,6 @@
             <div class="band-card">
                 <img src="NewEllum.jpg" class="band-img" alt="New Ellum" loading="lazy" />
                 <h3>New Ellum</h3>
-                <p class="band-time">Late night closing</p>
             </div>
 
         </div>
@@ -209,7 +214,7 @@
                         <img src="DallasLife.jpg" alt="Dallas Life" class="charity-logo" loading="lazy" />
                     </div>
                 </a>
-                <h3>Dallas Life Homeless Shelter</h3>
+                <h3>Dallas Life Homeless Shelter</hh3>
                 <p>
                     Providing shelter, meals, and support services to those experiencing homelessness.
                 </p>
@@ -391,7 +396,6 @@
 </footer>
 
 <script src="script.js"></script>
-```
 
 </body>
 </html>

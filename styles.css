@@ -242,6 +242,50 @@ WITHOUT CROPPING WIDTH
 }
 
 /* =============================================
+DONATE NOW BAR – STICKY GOLD STRIP BELOW HERO
+============================================= */
+
+.donate-bar {
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    #f4d26a,
+    #e2b649,
+    #f8e49b
+  );
+  padding: var(--spacing-md) 0;
+  text-align: center;
+  box-shadow: var(--shadow-md);
+
+  position: sticky;
+  top: 64px; /* adjust if your navbar is taller/shorter */
+  z-index: 90;
+}
+
+.donate-btn {
+  background: #061322;
+  color: #fbe8a5;
+  padding: var(--spacing-sm) var(--spacing-xl);
+  border-radius: 999px;
+  font-size: 1.3rem;
+  font-weight: 900;
+  font-family: "Bangers", var(--font-heading), system-ui;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  border: 3px solid #fbe8a5;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.25s ease, background-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.donate-btn:hover {
+  background: #0b223d;
+  transform: scale(1.06);
+  box-shadow: var(--shadow-lg);
+}
+
+/* =============================================
 ABOUT SECTION
 ============================================= */
 
