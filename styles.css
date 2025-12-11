@@ -574,7 +574,8 @@ CHARITIES SECTION — LOGOS + DONATE QR
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.qr-item img {
+/* QR CODES (big squares) */
+.qr-item img:not(.qr-logo) {
   width: 230px;
   height: auto;
   border-radius: 8px;
@@ -583,6 +584,19 @@ CHARITIES SECTION — LOGOS + DONATE QR
   transition: box-shadow 0.25s ease;
 }
 
+/* Text directly under QR (Venmo/PayPal/Zelle labels) */
+.qr-text {
+  margin-top: 0;
+  margin-bottom: var(--spacing-xs);
+  font-family: var(--font-primary);
+  font-size: 1.1rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+}
+
+/* Default <p> in qr-item (fallback if qr-text isn't used) */
 .qr-item p {
   margin-top: 0;
   font-family: var(--font-primary);
@@ -592,9 +606,49 @@ CHARITIES SECTION — LOGOS + DONATE QR
   letter-spacing: 0.08em;
 }
 
+/* Small payment service logos below text (50% smaller than QR codes) */
+.qr-logo {
+  width: 115px; /* ~50% of 230px QR code width */
+  height: auto;
+  display: block;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* In case you want an extra-small modifier */
+.qr-logo.small {
+  width: 115px;
+}
+
 .qr-item:hover {
   transform: translateY(-4px) scale(1.03);
   box-shadow: var(--shadow-xl);
+}
+
+/* Clickable link styling under QR */
+.qr-link {
+  margin-top: var(--spacing-xs);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: none;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  background-color: rgba(3, 8, 20, 0.85);
+  border: 1px solid rgba(243, 231, 197, 0.35);
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-light);
+}
+
+.qr-link span {
+  color: var(--text-dark);
+}
+
+.qr-link:hover {
+  background-color: rgba(10, 25, 55, 0.95);
+  border-color: var(--primary-color);
 }
 
 /* =============================================
@@ -824,7 +878,7 @@ RESPONSIVE
     gap: var(--spacing-lg);
   }
 
-  .qr-item img {
+  .qr-item img:not(.qr-logo) {
     width: 260px;
   }
 
