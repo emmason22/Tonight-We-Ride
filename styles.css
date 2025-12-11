@@ -574,6 +574,16 @@ CHARITIES SECTION — LOGOS + DONATE QR
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+/* ✅ Make Venmo card feel clickable */
+.qr-item--venmo {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.qr-item--venmo p {
+  text-decoration: none;
+}
+
 /* QR CODES (big squares) */
 .qr-item img:not(.qr-logo) {
   width: 230px;
