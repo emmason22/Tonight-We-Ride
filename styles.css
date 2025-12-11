@@ -661,6 +661,37 @@ CHARITIES SECTION — LOGOS + DONATE QR
   border-color: var(--primary-color);
 }
 
+/* ---------------------------------------------
+   SIMPLE DONATION TEXT (JUST LINES OF TEXT)
+---------------------------------------------- */
+
+.donation-text {
+  margin-top: var(--spacing-xl);
+  text-align: center;
+  font-family: var(--font-primary);
+}
+
+.donation-text h3 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  margin-bottom: var(--spacing-sm);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.donation-text p {
+  font-size: 1rem;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.donation-text p span {
+  font-weight: 600;
+  color: var(--text-light);
+}
+
 /* =============================================
 CALL TO ACTION
 ============================================= */
